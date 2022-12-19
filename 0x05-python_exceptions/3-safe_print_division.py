@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-
-global div
+# 3-safe_print_division.py
 
 
 def safe_print_division(a, b):
-    global div
+    """Returns the division of a by b."""
     try:
         div = a / b
     except (TypeError, ZeroDivisionError):
         div = None
     finally:
         print("Inside result: {}".format(div))
-    return div
+    return (div)
